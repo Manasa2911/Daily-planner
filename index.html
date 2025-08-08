@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Planner</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-div">
+                <span class="daily unselectable">Daily</span>
+                <span class="planner unselectable">Planner</span>
+            </div>
+              <div class="date-block">
+                <div class="date">Date</div>
+
+                <div class="days">
+                    <button>S</button><button class="active">M</button><button>T</button>
+                    <button class="active">W</button><button>T</button><button
+                        class="active">F</button><button>S</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-section">
+            <div class="column">
+                <div class="section goals">
+                    <h2>Today's Goals</h2>
+                    <div class="goals-list">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                    </div>
+                </div>
+                <div class="section meal">
+                    <h3>Meal Tracker</h3>
+                    <br>
+                    <h4>Breakfast</h4>
+                    <input type="text">
+                    <h4>Lunch</h4>
+                    <input type="text">
+                    <h4>Dinner</h4>
+                    <input type="text">
+                    <h4>Snack</h4>
+                    <input type="text">
+                </div>
+                <div class="section water-intake water">
+                    <h2>Water Intake</h2>
+                    <br>
+                    <div class="drops">
+                        <div class="drops">
+
+
+                            <img src="drop.png" class="water-intake">
+                            <img src="drop.png" class="water-intake">
+                            <img src="drop.png" class="water-intake">
+                            <img src="drop.png" class="water-intake">
+
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Total:">
+                </div>
+                <div class="section money">
+                    <h2>Money Tracker</h2>
+                    <br>
+                    <div class="money-inner-div">
+                        <div>
+                            <h4>Money In</h4>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <h4>Money Out</h4>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="section appointment">
+                    <h2>Today</h2>
+                    <h2>Appointment</h2>
+                    <br>
+                    <div class="fields">
+                        <div class="field-col time">
+                            <label for="time">Time</label>
+                            <hr>
+                            <textarea rows="22"></textarea>
+                        </div>
+                        <div class="field-col event">
+                            <label for="event">Event</label>
+                            <hr>
+                            <textarea rows="22"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="section tasks">
+                    <h2>Things to Get</h2>
+                    <h2>Done Today</h2>
+                    <div class="goals-list">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                        <input type="text" class="goal-item">
+                    </div>
+                </div>
+                <div class="section grateful">
+                    <h2>Today I'm</h2>
+                    <h2>Grateful For</h2>
+                </div>
+            </div>
+            <div class="column">
+                <div class="section weather">
+                    <h2>Weather</h2>
+                    <div class="drop-weather">
+                        <img src="weather-1.png" class="drop-weater-icon" alt="Weather Icon">
+                        <img src="weather-2.png" class="drop-weater-icon" alt="Weather Icon">
+                        <img src="weather-3.png" class="drop-weater-icon" alt="Weather Icon">
+                        <img src="weather-3.png" class="drop-weater-icon" alt="Weather Icon">
+                    </div>
+                </div>
+                <div class="section mood">
+                    <h2>Mood</h2>
+                    <br>
+                    <div class="drops">
+                        <img src="smile.png" class="drops-icon" alt="Mood Icon">
+                        <img src="sad.png" class="drops-icon" alt="Mood Icon">
+                        <img src="happy.png" class="drops-icon" alt="Mood Icon">
+                        <img src="cry.png" class="drops-icon" alt="Mood Icon">
+                        <img src="angry.png" class="drops-icon" alt="Mood Icon">
+                        <img src="icon-1.png" class="drops-icon" alt="Mood Icon">
+                    </div>
+                    <textarea rows="9"></textarea>
+                </div>
+                <div class="section exercise">
+                    <h2>Exercise</h2>
+                    <br>
+                    <h4>Total Minutes</h4>
+                    <input type="text">
+                    <br><br>
+                    <h4>Total Steps</h4>
+                    <input type="text">
+                </div>
+                <div class="section reminder1">
+                    <h2>Reminder</h2>
+                    <br>
+                    <textarea rows="6"></textarea>
+                </div>
+
+                <div style="margin-top: 20px; text-align: center;">
+                    <button id="save-btn"
+                        style="padding: 10px 20px; font-weight: bold; background-color: var(--primary-color); color: white; border: none; border-radius: 6px; cursor: pointer; margin-right: 10px;">
+                        Save Info
+                    </button>
+
+                    <button id="clear-btn"
+                        style="padding: 10px 20px; font-weight: bold; background-color: var(--secondary-color); color: white; border: none; border-radius: 6px; cursor: pointer;">
+                        Clear All
+                    </button>
+
+                    <div id="save-msg"
+                        style="margin-top: 10px; font-family: var(--font-family-montserrat); color: var(--secondary-color); opacity: 0; transition: opacity 0.5s ease;">
+                        ✅ Data Saved!
+                    </div>
+                </div>
+
+
+                <div class="section reminder2">
+                    <h2>Reminder</h2>
+                    <br>
+                    <textarea rows="6"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script>
+    // Get selected day from button
+    function getActiveDay() {
+        const activeBtn = document.querySelector('.days button.active');
+        return activeBtn ? activeBtn.textContent : 'default';
+    }
+
+    // Save data to localStorage
+    function saveData() {
+        const day = getActiveDay();
+        const inputs = document.querySelectorAll('input[type="text"], textarea');
+        inputs.forEach((input, index) => {
+            localStorage.setItem(`${day}-planner-data-${index}`, input.value);
+        });
+        showSaveMessage();
+    }
+
+    // Load data from localStorage
+    function loadData() {
+        const day = getActiveDay();
+        const inputs = document.querySelectorAll('input[type="text"], textarea');
+        inputs.forEach((input, index) => {
+            const savedValue = localStorage.getItem(`${day}-planner-data-${index}`);
+            input.value = savedValue !== null ? savedValue : '';
+        });
+    }
+
+    // Clear all data
+    function clearAllData() {
+        const day = getActiveDay();
+        const inputs = document.querySelectorAll('input[type="text"], textarea');
+        inputs.forEach((input, index) => {
+            input.value = '';
+            localStorage.removeItem(`${day}-planner-data-${index}`);
+        });
+    }
+
+    // Show confirmation
+    function showSaveMessage() {
+        const msg = document.getElementById('save-msg');
+        msg.style.opacity = '1';
+        setTimeout(() => {
+            msg.style.opacity = '0';
+        }, 1500);
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+        loadData();
+
+        // Save on input
+        const inputs = document.querySelectorAll('input[type="text"], textarea');
+        inputs.forEach((input) => {
+            input.addEventListener('input', saveData);
+        });
+
+        // Save & Clear buttons
+        document.getElementById('save-btn').addEventListener('click', saveData);
+        document.getElementById('clear-btn').addEventListener('click', clearAllData);
+
+        // Day button toggle
+        document.querySelectorAll('.days button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.days button').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                loadData(); // Load data for selected day
+            });
+        });
+    });
+</script>
+</body>
+
+</html>
